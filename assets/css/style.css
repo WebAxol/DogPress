@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header, main, footer {
+  margin: 0;
+  padding: 20px;
+  border: solid 3px red;
+}
+
+main article {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
