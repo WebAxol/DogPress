@@ -3,10 +3,16 @@
   margin: 0;
 }
 
-header, main, footer {
-  margin: 0;
-  padding: 20px;
-  border: solid 3px red;
+header {
+  background-image: url("./../img/banner.png");
+  background-size: cover;
+  min-height: 200px;
+}
+header .inner-header {
+  background: linear-gradient(180deg, rgba(195, 195, 195, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
+  width: 100%;
+  min-height: 200px;
+  padding: 50px;
 }
 
 main article {
