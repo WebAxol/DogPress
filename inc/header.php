@@ -36,24 +36,25 @@
     </div>
     </nav>
 
-    <header class="bg-secondary p-5">
+    <header>
+        <div class="inner-header">
+            <!-- Dynamically set title -->
 
-        <!-- Dynamically set title -->
-
-        <h1 class="text-white"> 
-            <?php
-            if(is_post_type_archive()) : 
-                post_type_archive_title();
-            else : 
-                $page_id = get_queried_object_id(); 
-                echo get_the_title($page_id);
-            endif;
-            ?>
-        </h1>
-        <p  class="text-white"> 
-            <?php 
-            if(is_front_page()){
-                echo get_bloginfo('description'); 
-            }?>
-        </p>
+            <h1 class="text-white"> 
+                <?php
+                if(is_post_type_archive()) : 
+                    post_type_archive_title();
+                else : 
+                    $page_id = get_queried_object_id(); 
+                    echo get_the_title($page_id);
+                endif;
+                ?>
+            </h1>
+            <p  class="text-white"> 
+                <?php 
+                if(is_front_page()){
+                    echo get_bloginfo('description'); 
+                }?>
+            </p>
+        </div>
     </header>
